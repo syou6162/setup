@@ -1,0 +1,29 @@
+#!/bin/bash
+set -euxo pipefail
+
+brew update
+
+formulas=( \
+  wget \
+  curl \
+  git \
+  tig \
+  jq \
+  zsh \
+  vim \
+  tmux \
+  redis \
+  nkf \
+  watch \
+  go \
+  scala sbt \
+  rbenv \
+  nodenv \
+  pyenv \
+  mackerelio/mackerel-agent/mackerel-agent \
+  mackerelio/mackerel-agent/mkr \
+)
+
+for formula in "${formulas[@]}"; do
+  tools/brew-install "$formula"
+done

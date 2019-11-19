@@ -7,3 +7,4 @@ test -t 0 && sudo -v || :
 
 ./dotfiles
 ./brew
+./brew-formula
