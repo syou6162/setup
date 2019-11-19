@@ -9,5 +9,5 @@ ls -la "${target}"
 
 # $HOME以下に設定ファイル群へのシンボリックリンクを貼る
 for filename in zshrc zshenv gitconfig gitexclude tmux.conf vimrc tigrc ctags tern-project; do
-  tools/make-symlink "$target/$f" ~/"$f"
+  tools/make-symlink "$target/$filename" ~/"$filename"
 done
