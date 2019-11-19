@@ -6,3 +6,8 @@ target=~/.files
 tools/git-clone https://github.com/syou6162/config "$target"
 
 ls -la "${target}"
+
+# $HOME以下に設定ファイル群へのシンボリックリンクを貼る
+for filename in zshrc zshenv gitconfig gitexclude tmux.conf vimrc tigrc ctags tern-project; do
+  tools/make-symlink "$target/$f" ~/"$f"
+done
