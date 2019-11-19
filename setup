@@ -1,0 +1,8 @@
+#!/bin/bash
+set -euxo pipefail
+
+cd "$(dirname "$0")"
+
+test -t 0 && sudo -v || :
+
+./dotfiles

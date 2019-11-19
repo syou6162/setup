@@ -1,0 +1,8 @@
+#!/bin/bash
+set -euxo pipefail
+
+target=~/.files
+
+tools/git-clone https://github.com/syou6162/config "$target"
+
+ls -la "${target}"
