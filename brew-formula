@@ -12,6 +12,10 @@ formulas=( \
   zsh \
   vim \
   tmux \
+  peco \
+  fish \
+  sshuttle \
+  terraform \
   redis \
   nkf \
   watch \
@@ -20,6 +24,12 @@ formulas=( \
   rbenv \
   nodenv \
   pyenv \
+  ansible \
+  awscli \
+  mecab \
+  vegeta \
+  ecs-deploy \
+  yarn \
   mackerelio/mackerel-agent/mackerel-agent \
   mackerelio/mackerel-agent/mkr \
 )
