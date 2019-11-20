@@ -28,7 +28,6 @@ formulas=( \
   awscli \
   mecab \
   vegeta \
-  yarn \
   mackerelio/mackerel-agent/mackerel-agent \
   mackerelio/mackerel-agent/mkr \
 )
