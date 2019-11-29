@@ -13,3 +13,7 @@ done
 if [ ! -e $HOME/.config/fish/config.fish ]; then
   ln -s "${target}/config.fish" $HOME/.config/fish/config.fish
 fi
+
+if [ ! -e $HOME/.config/fish/fishfile ]; then
+  ln -s "${target}/fishfile" $HOME/.config/fish/fishfile
+fi
