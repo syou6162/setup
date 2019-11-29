@@ -12,6 +12,7 @@ formulas=( \
   dropbox \
   1password \
   aquaskk \
+  alfred \
 )
 
 for formula in "${formulas[@]}"; do
