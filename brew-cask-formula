@@ -10,6 +10,7 @@ formulas=( \
   hammerspoon \
   visual-studio-code \
   dropbox \
+  1password \
 )
 
 for formula in "${formulas[@]}"; do
