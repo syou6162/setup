@@ -10,10 +10,7 @@ for filename in .zshrc .zshenv .gitconfig .gitexclude .tmux.conf .vimrc .tigrc .
   tools/make-symlink "$target/$filename" ~/"$filename"
 done
 
-if [ ! -e $HOME/.config/fish/config.fish ]; then
-  ln -s "${target}/config.fish" $HOME/.config/fish/config.fish
-fi
+tools/make-symlink "${target}/config.fish" $HOME/.config/fish/config.fish
+tools/make-symlink "${target}/fishfile" $HOME/.config/fish/fishfile
 
-if [ ! -e $HOME/.config/fish/fishfile ]; then
-  ln -s "${target}/fishfile" $HOME/.config/fish/fishfile
-fi
+tools/make-symlink "${target}/init.lua" $HOME/.hammerspoon/init.lua
