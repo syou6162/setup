@@ -20,6 +20,7 @@ formulas=( \
   nkf \
   watch \
   go \
+  direnv \
   scala sbt \
   rbenv \
   nodenv \
