@@ -29,6 +29,7 @@ formulas=( \
   awscli \
   mecab \
   vegeta \
+  reattach-to-user-namespace \
   mackerelio/mackerel-agent/mackerel-agent \
   mackerelio/mackerel-agent/mkr \
 )
