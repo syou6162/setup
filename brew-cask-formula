@@ -11,6 +11,7 @@ formulas=( \
   visual-studio-code \
   dropbox \
   1password \
+  aquaskk \
 )
 
 for formula in "${formulas[@]}"; do
