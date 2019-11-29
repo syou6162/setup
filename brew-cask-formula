@@ -13,6 +13,7 @@ formulas=( \
   1password \
   aquaskk \
   alfred \
+  karabiner-elements \
 )
 
 for formula in "${formulas[@]}"; do
