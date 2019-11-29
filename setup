@@ -9,3 +9,4 @@ test -t 0 && sudo -v || :
 ./brew
 ./brew-formula
 ./brew-cask-formula
+./font
