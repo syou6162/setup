@@ -8,6 +8,7 @@ formulas=( \
   google-chrome \
   slack \
   hammerspoon \
+  visual-studio-code \
 )
 
 for formula in "${formulas[@]}"; do
