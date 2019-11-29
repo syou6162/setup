@@ -9,3 +9,7 @@ tools/git-clone https://github.com/syou6162/config "$target"
 for filename in .zshrc .zshenv .gitconfig .gitexclude .tmux.conf .vimrc .tigrc .ctags .tern-project; do
   tools/make-symlink "$target/$filename" ~/"$filename"
 done
+
+if [ ! -e $HOME/.config/fish/config.fish ]; then
+  ln -s "${target}/config.fish" $HOME/.config/fish/config.fish
+fi
