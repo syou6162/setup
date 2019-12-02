@@ -32,6 +32,7 @@ formulas=( \
   reattach-to-user-namespace \
   mackerelio/mackerel-agent/mackerel-agent \
   mackerelio/mackerel-agent/mkr \
+  silinternational/tap/ecs-deploy \
 )
 
 for formula in "${formulas[@]}"; do
