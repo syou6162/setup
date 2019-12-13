@@ -4,6 +4,7 @@ set -euxo pipefail
 brew update
 
 formulas=( \
+  coreutils \
   wget \
   curl \
   git \
