@@ -35,6 +35,7 @@ formulas=( \
   mackerelio/mackerel-agent/mackerel-agent \
   mackerelio/mackerel-agent/mkr \
   silinternational/tap/ecs-deploy \
+  itchyny/tap/base58 \
 )
 
 for formula in "${formulas[@]}"; do
