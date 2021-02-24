@@ -3,7 +3,7 @@ set -euxo pipefail
 
 formulas=( \
   docker \
-  java \
+  java11 \
   iterm2 \
   google-chrome \
   slack \
