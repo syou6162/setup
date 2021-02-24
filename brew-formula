@@ -37,6 +37,7 @@ formulas=( \
   silinternational/tap/ecs-deploy \
   itchyny/tap/base58 \
   goreleaser/tap/goreleaser \
+  kayac/tap/ecspresso \
 )
 
 for formula in "${formulas[@]}"; do
