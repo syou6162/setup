@@ -16,6 +16,7 @@ formulas=( \
   peco \
   fish \
   sshuttle \
+  awscli \
   terraform \
   redis \
   nkf \
@@ -27,7 +28,6 @@ formulas=( \
   nodenv \
   pyenv \
   ansible \
-  awscli \
   mecab \
   vegeta \
   awslogs \
