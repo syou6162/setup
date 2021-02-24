@@ -1,0 +1,12 @@
+name: bashスクリプトのフォーマットをチェック
+
+on: [push]
+
+jobs:
+  check_bash_scripts_format:
+    name: Check format of bash scripts
+    runs-on: ubuntu-16.04
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - run: find script -type f -name '*' | xargs -I% grep -l "^#!/bin/bash" % | xargs -I% shellcheck -e SC2002,SC2011,SC2013,SC2016,SC2038,SC2164 %
