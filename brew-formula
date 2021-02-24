@@ -16,7 +16,6 @@ formulas=( \
   peco \
   fish \
   sshuttle \
-  awscli \
   terraform \
   redis \
   nkf \
