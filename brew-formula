@@ -33,7 +33,6 @@ formulas=( \
   reattach-to-user-namespace \
   mackerelio/mackerel-agent/mackerel-agent \
   mackerelio/mackerel-agent/mkr \
-  silinternational/tap/ecs-deploy \
   itchyny/tap/base58 \
   goreleaser/tap/goreleaser \
   kayac/tap/ecspresso \
