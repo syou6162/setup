@@ -12,5 +12,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@master
+    - name: Uninstall pre-installed packages
+      run: brew list | xargs brew uninstall --force
     - name: Test setup scripts
       run: ./setup
