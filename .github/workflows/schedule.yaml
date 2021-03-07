@@ -12,5 +12,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@master
+    - name: Uninstall default go
+      run: brew uninstall go@1.15
     - name: Test setup scripts
       run: ./setup
