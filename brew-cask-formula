@@ -14,7 +14,6 @@ formulas=( \
   aquaskk \
   alfred \
   karabiner-elements \
-  quail \
 )
 
 for formula in "${formulas[@]}"; do
