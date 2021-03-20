@@ -1,0 +1,52 @@
+#!/bin/bash
+set -euxo pipefail
+
+
+cmdname="$(basename "${BASH_SOURCE[0]}")"
+
+if ! command -v defaults >/dev/null; then
+  echo "$cmdname: defaults not found" >&2
+  exit
+fi
+
+if ! command -v osascript >/dev/null; then
+  echo "$cmdname: osascript not found" >&2
+  exit
+fi
+
+# Ref: https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+
+# Kill System Preferences to prevent them from overriding settings
+osascript -e 'tell application "System Preferences" to quit'
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+# Mute the beep sound
+defaults write NSGlobalDomain com.apple.sound.beep.volume -int 0
+
+# Dock
+defaults write com.apple.dock orientation -string "right"
+
+osascript -e 'tell application "Dock" to quit'
+
+# Screenshot
+defaults write com.apple.screencapture type png
+defaults write com.apple.screencapture disable-shadow -bool true
+mkdir -p ~/Desktop/screenshots
+defaults write com.apple.screencapture location ~/Desktop/screenshots
+
+# Key
+defaults write NSGlobalDomain InitialKeyRepeat -int 25
+defaults write NSGlobalDomain KeyRepeat -int 2
+
+# Remap keys (ref: https://developer.apple.com/library/archive/technotes/tn2450/_index.html)
+keyboardid=$(ioreg -c AppleEmbeddedKeyboard -r | grep -Eiw "VendorID|ProductID" | awk '{ print $4 }' | tr '\n' '-' && echo 0) || :
+if [[ -n "$keyboardid" ]]; then
+  # Caps Lock 0x39 -> Left Control 0xe0
+  defaults -currentHost write -g "com.apple.keyboard.modifiermapping.$keyboardid" -array \
+    '<dict>
+      <key>HIDKeyboardModifierMappingSrc</key> <integer>0x700000039</integer>
+      <key>HIDKeyboardModifierMappingDst</key> <integer>0x7000000e0</integer>
+    </dict>'
+fi
