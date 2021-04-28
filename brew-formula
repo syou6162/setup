@@ -15,14 +15,12 @@ formulas=( \
   tmux \
   peco \
   fish \
-  sshuttle \
   terraform \
   redis \
   nkf \
   watch \
   go \
   direnv \
-  scala sbt \
   rbenv \
   nodenv \
   pyenv \
