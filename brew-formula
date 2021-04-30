@@ -32,7 +32,6 @@ formulas=( \
   mackerelio/mackerel-agent/mackerel-agent \
   mackerelio/mackerel-agent/mkr \
   itchyny/tap/base58 \
-  goreleaser/tap/goreleaser \
   kayac/tap/ecspresso \
 )
 
