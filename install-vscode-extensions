@@ -1,0 +1,18 @@
+#!/bin/bash
+set -euxo pipefail
+
+extensions=( \
+  golang.go \
+  ms-python.python \
+  ms-toolsai.jupyter \
+  ms-vscode-remote.remote-containers \
+  octref.vetur \
+  rebornix.ruby \
+  satokaz.vscode-memo-life-for-you \
+  vscodevim.vim \
+  wingrunr21.vscode-ruby \
+)
+
+for extension in "${extensions[@]}"; do
+  code --install-extension "${extension}"
+done
