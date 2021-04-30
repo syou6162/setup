@@ -14,5 +14,5 @@ extensions=( \
 )
 
 for extension in "${extensions[@]}"; do
-  code --install-extension "${extension}"
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" --install-extension "${extension}"
 done
