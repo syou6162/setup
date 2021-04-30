@@ -28,6 +28,8 @@ formulas=( \
   mecab \
   vegeta \
   awslogs \
+  helm \
+  argo \
   reattach-to-user-namespace \
   mackerelio/mackerel-agent/mackerel-agent \
   mackerelio/mackerel-agent/mkr \
