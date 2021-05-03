@@ -30,6 +30,7 @@ formulas=( \
   awslogs \
   helm \
   argo \
+  kubectx \
   reattach-to-user-namespace \
   mackerelio/mackerel-agent/mackerel-agent \
   mackerelio/mackerel-agent/mkr \
