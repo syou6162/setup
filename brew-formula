@@ -15,7 +15,6 @@ formulas=( \
   tmux \
   peco \
   fish \
-  terraform \
   redis \
   nkf \
   watch \
@@ -24,6 +23,7 @@ formulas=( \
   rbenv \
   nodenv \
   pyenv \
+  tfenv \
   ansible \
   mecab \
   vegeta \
