@@ -23,6 +23,7 @@ formulas=( \
   rbenv \
   nodenv \
   pyenv \
+  pipenv \
   tfenv \
   ansible \
   mecab \
