@@ -37,6 +37,7 @@ formulas=( \
   mackerelio/mackerel-agent/mkr \
   itchyny/tap/base58 \
   kayac/tap/ecspresso \
+  minamijoyo/hcledit/hcledit \
 )
 
 for formula in "${formulas[@]}"; do
