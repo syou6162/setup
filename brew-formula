@@ -38,6 +38,7 @@ formulas=( \
   itchyny/tap/base58 \
   kayac/tap/ecspresso \
   minamijoyo/hcledit/hcledit \
+  minamijoyo/tfmigrate/tfmigrate \
 )
 
 for formula in "${formulas[@]}"; do
