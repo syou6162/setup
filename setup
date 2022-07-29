@@ -13,4 +13,5 @@ test -t 0 && sudo -v || :
 ./brew-formula
 ./brew-cask-formula
 
+./install-fisher-plugins
 ./install-vscode-extensions
