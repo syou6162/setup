@@ -1,2 +1,7 @@
 #!/usr/local/bin/fish
+
+# 初回はプラグインをうまく認識してくれない様子
+# https://github.com/jorgebucaran/fisher/issues/476#issuecomment-430869099
+exec fish
+
 fisher list | fisher install
