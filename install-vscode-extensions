@@ -8,7 +8,6 @@ extensions=( \
   ms-vscode-remote.remote-containers \
   octref.vetur \
   rebornix.ruby \
-  satokaz.vscode-memo-life-for-you \
   vscodevim.vim \
   wingrunr21.vscode-ruby \
 )

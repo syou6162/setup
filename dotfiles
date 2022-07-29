@@ -15,7 +15,6 @@ tools/make-symlink "${target}/fish_plugins" "${HOME}"/.config/fish/fish_plugins
 
 tools/make-symlink "${target}/vscode/keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
 tools/make-symlink "${target}/vscode/settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
-tools/make-symlink "${target}/vscode/snippets/insert_current_time_and_separator.code-snippets" "${HOME}/Library/Application Support/Code/User/snippets/insert_current_time_and_separator.code-snippets"
 
 tools/make-symlink "${target}/init.lua" "${HOME}/.hammerspoon/init.lua"
 
