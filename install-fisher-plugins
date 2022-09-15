@@ -1,3 +1,0 @@
-#!/usr/local/bin/fish
-
-fish -c fisher list | fish -c fisher install
