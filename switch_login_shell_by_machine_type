@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euxo pipefail
+
+# M1 MacかIntel Macかによって、brew経由でインストールした異なるパスのfishを実行する
+if [[ "$(uname -m)" == "arm64" ]]; then
+  /opt/homebrew/bin/fish
+else
+  /usr/local/bin/fish
+fi
