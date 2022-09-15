@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euxo pipefail
+set -euo pipefail
 
 # M1 MacかIntel Macかによって、brew経由でインストールした異なるパスのfishを実行する
 if [[ "$(uname -m)" == "arm64" ]]; then
