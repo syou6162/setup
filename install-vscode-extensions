@@ -10,6 +10,14 @@ extensions=( \
   rebornix.ruby \
   vscodevim.vim \
   wingrunr21.vscode-ruby \
+  github.copilot \
+  github.copilot-chat \
+  github.vscode-github-actions \
+  bierner.markdown-mermaid \
+  dart-code.dart-code \
+  dart-code.flutter \
+  hashicorp.terraform \
+  innoverio.vscode-dbt-power-user \
 )
 
 for extension in "${extensions[@]}"; do
