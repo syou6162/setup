@@ -4,12 +4,11 @@ set -euxo pipefail
 brew update
 
 formulas=( \
-  coreutils \
+  jq \
   wget \
   curl \
   git \
   tig \
-  jq \
   zsh \
   vim \
   tmux \
@@ -22,12 +21,11 @@ formulas=( \
   rbenv \
   nodenv \
   pyenv \
-  pipenv \
   tfenv \
-  mecab \
   awslogs \
   helm \
   argo \
+  coreutils \
   kayac/tap/ecspresso \
   minamijoyo/hcledit/hcledit \
   minamijoyo/tfmigrate/tfmigrate \
