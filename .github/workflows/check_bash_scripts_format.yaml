@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - run: find script -type f -name '*' | xargs -I% grep -l "^#!/bin/bash" % | xargs -I% shellcheck -e SC2002,SC2011,SC2013,SC2016,SC2038,SC2164 %
