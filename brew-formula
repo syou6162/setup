@@ -28,7 +28,6 @@ formulas=( \
   awslogs \
   helm \
   argo \
-  kubectx \
   kayac/tap/ecspresso \
   minamijoyo/hcledit/hcledit \
   minamijoyo/tfmigrate/tfmigrate \
