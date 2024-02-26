@@ -40,6 +40,21 @@ defaults write com.apple.screencapture location ~/Desktop/screenshots
 defaults write NSGlobalDomain InitialKeyRepeat -int 25
 defaults write NSGlobalDomain KeyRepeat -int 2
 
+# キーボード => ショートカット => アプリケーション
+# 「ウインドウを画面左側に移動」をCtrl + Cmd + 左矢印キー
+defaults write "Apple Global Domain" NSUserKeyEquivalents -dict-add "\U30a6\U30a4\U30f3\U30c9\U30a6\U3092\U753b\U9762\U53f3\U5074\U306b\U79fb\U52d5" "@^\U2192"
+# 「ウインドウを画面右側に移動」をCtrl + Cmd + 右矢印キー
+defaults write "Apple Global Domain" NSUserKeyEquivalents -dict-add "\U30a6\U30a4\U30f3\U30c9\U30a6\U3092\U753b\U9762\U5de6\U5074\U306b\U79fb\U52d5" "@^\U2190"
+
+# 拡張子を常に表示
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# バッテリー残量を%表記に
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
+# 隠しファイルや隠しフォルダを表示
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
 # Remap keys (ref: https://developer.apple.com/library/archive/technotes/tn2450/_index.html)
 keyboardid=$(ioreg -c AppleEmbeddedKeyboard -r | grep -Eiw "VendorID|ProductID" | awk '{ print $4 }' | tr '\n' '-' && echo 0) || :
 if [[ -n "$keyboardid" ]]; then
