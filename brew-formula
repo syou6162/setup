@@ -15,7 +15,6 @@ formulas=( \
   tmux \
   peco \
   fish \
-  redis \
   nkf \
   watch \
   go \
@@ -25,16 +24,11 @@ formulas=( \
   pyenv \
   pipenv \
   tfenv \
-  ansible \
   mecab \
-  vegeta \
   awslogs \
   helm \
   argo \
   kubectx \
-  mackerelio/mackerel-agent/mackerel-agent \
-  mackerelio/mackerel-agent/mkr \
-  itchyny/tap/base58 \
   kayac/tap/ecspresso \
   minamijoyo/hcledit/hcledit \
   minamijoyo/tfmigrate/tfmigrate \
