@@ -11,7 +11,7 @@ jobs:
     runs-on: macos-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@master
+      uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
     - name: Uninstall pre-installed packages
       run: brew list | xargs brew uninstall --force
     - name: Test setup scripts
