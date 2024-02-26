@@ -13,7 +13,6 @@ formulas=( \
   alfred \
   karabiner-elements \
   google-cloud-sdk \
-  google-japanese-ime \
 )
 
 for formula in "${formulas[@]}"; do
