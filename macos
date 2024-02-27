@@ -45,6 +45,8 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write "Apple Global Domain" NSUserKeyEquivalents -dict-add "\U30a6\U30a4\U30f3\U30c9\U30a6\U3092\U753b\U9762\U53f3\U5074\U306b\U79fb\U52d5" "@^\U2192"
 # 「ウインドウを画面右側に移動」をCtrl + Cmd + 右矢印キー
 defaults write "Apple Global Domain" NSUserKeyEquivalents -dict-add "\U30a6\U30a4\U30f3\U30c9\U30a6\U3092\U753b\U9762\U5de6\U5074\U306b\U79fb\U52d5" "@^\U2190"
+# 「ズーム」をCtrl + Cmd + 上矢印キー
+defaults write "Apple Global Domain" NSUserKeyEquivalents -dict-add "\U30ba\U30fc\U30e0" "@^\U2191"
 
 # 拡張子を常に表示
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
