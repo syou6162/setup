@@ -25,9 +25,6 @@ formulas=( \
   helm \
   argo \
   coreutils \
-  kayac/tap/ecspresso \
-  minamijoyo/hcledit/hcledit \
-  minamijoyo/tfmigrate/tfmigrate \
 )
 
 for formula in "${formulas[@]}"; do
