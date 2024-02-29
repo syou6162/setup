@@ -12,6 +12,7 @@ formulas=( \
   alfred \
   karabiner-elements \
   google-cloud-sdk \
+  raycast \
 )
 
 for formula in "${formulas[@]}"; do
