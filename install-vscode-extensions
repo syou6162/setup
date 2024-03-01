@@ -16,6 +16,7 @@ extensions=( \
   dart-code.flutter \
   hashicorp.terraform \
   innoverio.vscode-dbt-power-user \
+  vsls-contrib.codetour \
 )
 
 for extension in "${extensions[@]}"; do
