@@ -48,6 +48,9 @@ defaults write "Apple Global Domain" NSUserKeyEquivalents -dict-add "\U30a6\U30a
 # 「ズーム」をCtrl + Cmd + 上矢印キー
 defaults write "Apple Global Domain" NSUserKeyEquivalents -dict-add "\U30ba\U30fc\U30e0" "@^\U2191"
 
+# ステッキーズのスタイル付きのペーストをスタイルなしにする
+defaults write com.apple.Stickies NSUserKeyEquivalents -dict-add "\U30da\U30fc\U30b9\U30c8\U3057\U3066\U30b9\U30bf\U30a4\U30eb\U3092\U5408\U308f\U305b\U308b" "@v"
+
 # 拡張子を常に表示
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
