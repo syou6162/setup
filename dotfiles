@@ -6,7 +6,7 @@ target=~/.files
 tools/git-clone https://github.com/syou6162/config "${target}"
 
 # $HOME以下に設定ファイル群へのシンボリックリンクを貼る
-for filename in .zshrc .zshenv .zprofile .gitconfig .gitexclude .vimrc .tigrc; do
+for filename in .zshrc .zshenv .zprofile .gitconfig .gitexclude .vimrc .tigrc .tmux.conf; do
   tools/make-symlink "${target}/${filename}" ~/"${filename}"
 done
 
