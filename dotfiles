@@ -21,3 +21,11 @@ tools/make-symlink "${target}/vscode/settings.json" "${HOME}/Library/Application
 tools/make-symlink "${target}/init.lua" "${HOME}/.hammerspoon/init.lua"
 
 tools/make-symlink "${target}/karabiner.json" "${HOME}/.config/karabiner/karabiner.json"
+
+# .config/claude配下に揃えたいが、以下が解決するまで様子見
+# ref: https://github.com/anthropics/claude-code/issues/1455
+tools/make-symlink "${target}/claude/CLAUDE.md" "${HOME}/.claude/CLAUDE.md"
+tools/make-symlink "${target}/claude/settings.json" "${HOME}/.claude/settings.json"
+
+tools/make-symlink "${target}/claude/cchook_config.yaml" "${HOME}/.config/cchook/config.yaml"
+tools/make-symlink "${target}/claude/ccstatusline_config.yaml" "${HOME}/.config/ccstatusline/config.yaml"
