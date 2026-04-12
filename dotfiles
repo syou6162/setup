@@ -31,3 +31,4 @@ tools/make-symlink "${target}/claude/cchook_config.yaml" "${HOME}/.config/cchook
 tools/make-symlink "${target}/claude/ccstatusline_config.yaml" "${HOME}/.config/ccstatusline/config.yaml"
 
 tools/make-symlink "${target}/codex/config.toml" "${HOME}/.codex/config.toml"
+tools/make-symlink "${target}/codex/rules/default.rules" "${HOME}/.codex/rules/default.rules"
