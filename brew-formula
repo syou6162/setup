@@ -21,7 +21,6 @@ formulas=( \
   nodenv \
   pyenv \
   tfenv \
-  awslogs \
   helm \
   argo \
   coreutils \
