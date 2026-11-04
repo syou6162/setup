@@ -25,6 +25,7 @@ formulas=( \
   argo \
   coreutils \
   tmux \
+  mise \
 )
 
 for formula in "${formulas[@]}"; do
